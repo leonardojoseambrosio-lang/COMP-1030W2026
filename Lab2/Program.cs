@@ -18,5 +18,11 @@ public class Program
 
         // STEP 3: Output the sentence created in STEP 2 to the console with Console.WriteLine().
 
+        string weather = "sunny"; //Weather condition
+        string possibPrecip = "60%"; //Possibility of preciptation
+        string windConditions = "23 km/h with gusts to to 57 km/h"; //Wind conditions
+        string dailyHighTemp = "32ºC"; // Daily high temperature
+
+
     }
 }
