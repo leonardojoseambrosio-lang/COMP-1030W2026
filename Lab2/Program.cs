@@ -23,6 +23,7 @@ public class Program
         string windConditions = "23 km/h with gusts to to 57 km/h"; //Wind conditions
         string dailyHighTemp = "32ºC"; // Daily high temperature
         string dailyLowTemp = "28ºC"; //Daily low temperature
+        string uvIndex = "7 or high"; //UV index
 
     }
 }
