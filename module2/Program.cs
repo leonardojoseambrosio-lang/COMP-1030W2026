@@ -70,7 +70,7 @@ namespace Module2
             bool contains = updatedSentence.Contains("rainy");
             Console.WriteLine($"Contains 'rainy'? : {contains}");
 
-            // Inspired by the Microsoft tutorial at https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world
+            // Inspired by the Microsoft tutorial at https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-worl
         }
     }
 }
