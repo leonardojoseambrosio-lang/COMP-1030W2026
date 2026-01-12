@@ -67,8 +67,8 @@ namespace Module2
             Console.WriteLine($"Contains 'snowy'? : {contains}");
 
             // STEP 19: Update the above to look for "rainy" instead
-            bool contains = updatedSentence.Contains("rainy");
-            Console.WriteLine($"Contains 'rainy'? : {contains}");
+            bool contains2 = updatedSentence.Contains("rainy");
+            Console.WriteLine($"Contains 'rainy'? : {contains2}");
 
             // Inspired by the Microsoft tutorial at https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world
         }
