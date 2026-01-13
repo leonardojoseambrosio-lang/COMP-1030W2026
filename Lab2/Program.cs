@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Name: Leonardo Jose Ambrosio
+ID: 200657215
+Date: Jan/12/2026
+Lab 2 - COMP 1030 Programming Fundamentals
+*/
+
+using System;
 public class Program
 {
     public static void Main()
@@ -31,9 +38,9 @@ public class Program
         //Assembling all the variables
         string assemblingAll = $"Today's weather is {weather} with a {possibPrecip} of precipitation. Winds conditions: {windConditions}. The high will be {dailyHighTemp} and the low will be {dailyLowTemp}. UV Index: {uvIndex}. Have a nice day!";
 
-        //Output the sentence (test)
+        //Output the sentence
         Console.WriteLine(assemblingAll);
 
-
+        //Script complete
     }
 }
