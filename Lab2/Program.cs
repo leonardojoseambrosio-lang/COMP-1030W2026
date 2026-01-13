@@ -29,6 +29,10 @@ public class Program
 
 
         //Assembling all the variables
+        string assemblingAll = $"Today's weather is {weather}";
+
+        //Output the sentence (test)
+        Console.WriteLine(assemblingAll);
 
 
     }
