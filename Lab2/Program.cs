@@ -29,7 +29,7 @@ public class Program
 
 
         //Assembling all the variables
-        string assemblingAll = $"Today's weather is {weather}";
+        string assemblingAll = $"Today's weather is {weather} with a {possibPrecip} of precipitation. Winds conditions: {windConditions}. The high will be {dailyHighTemp} and the low will be {dailyLowTemp}. UV Index: {uvIndex}. Have a nice day!";
 
         //Output the sentence (test)
         Console.WriteLine(assemblingAll);
