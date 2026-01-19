@@ -194,7 +194,7 @@
              * the item name, and the price. We will need to convert the price to a string. */
 
             int item1NumChar = item1.Length;
-            string price1String = price1.ToString();
+            string price1String = "$" + price1.ToString();
             int price1NumChar = price1String.Length;
 
 
@@ -243,12 +243,19 @@
 
             /* STEP 16: Output the food items (include new line characters where needed) */
 
+            Console.Clear();
+            Console.WriteLine("Thanks for shopping at C#Mart");
+            Console.WriteLine($"{item1}{line1DotLeader}{price1String}");
+            Console.WriteLine($"{item2}{line2DotLeader}{price2String}");
+            Console.WriteLine($"{item3}{line3DotLeader}{price3String}");
 
             /* STEP 17: Output the subtotal */
-
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine($"SUBTOTAL                           {subTotal}");
 
             /* STEP 18: Output the tax - format it as a string with 2 decimal places */
 
+            Console.WriteLine($"TAX                                ${String.Format("{0:0.##}", total)}");   
 
             /* STEP 19: Output the total of the receipt (also formatted with 2 decimal places */
 
