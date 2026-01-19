@@ -255,13 +255,18 @@
 
             /* STEP 18: Output the tax - format it as a string with 2 decimal places */
 
-            Console.WriteLine($"TAX                                ${String.Format("{0:0.##}", total)}");   
+            Console.WriteLine($"TAX                                ${String.Format("{0:0.##}",Tax)}");
 
             /* STEP 19: Output the total of the receipt (also formatted with 2 decimal places */
 
-
+            Console.WriteLine($"TOTAL                               ${String.Format("{0:0.##}", total)}");
 
             /* STEP 20: Output the method of payment in ALL CAPS, and the amount paid */
+
+            Console.WriteLine("The method of payment: " + methodOfPayment);
+            string finalPaymentMethod = methodOfPayment.ToUpper();
+
+            Console.WriteLine($"Payment method: {finalPaymentMethod},  Amount paid: {total:0.##}");
 
 
         }
