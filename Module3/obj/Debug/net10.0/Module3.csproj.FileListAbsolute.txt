@@ -1,0 +1,5 @@
+C:\COMP1030W\Module3\obj\Debug\net10.0\Module3.GeneratedMSBuildEditorConfig.editorconfig
+C:\COMP1030W\Module3\obj\Debug\net10.0\Module3.AssemblyInfoInputs.cache
+C:\COMP1030W\Module3\obj\Debug\net10.0\Module3.AssemblyInfo.cs
+C:\COMP1030W\Module3\obj\Debug\net10.0\Module3.csproj.CoreCompileInputs.cache
+C:\COMP1030W\Module3\obj\Debug\net10.0\Module3.sourcelink.json
