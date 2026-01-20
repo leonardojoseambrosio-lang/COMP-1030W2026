@@ -56,6 +56,9 @@ public class Program
         Console.WriteLine($"The surface area of Earth is ${String.Format("{0:0.##}",earthSurfArea)}.");
         Console.WriteLine($"The surface area of Mars is ${String.Format("{0:0.##}", marsSurfArea)}.");
         Console.WriteLine($"The surface area of Jupter is {jupterSurfArea:0.##}.");
+        Console.WriteLine($"The surface area of Saturn is {saturnSurfArea:0.##}.");
+        Console.WriteLine($"The surface area of Uranus is {uranusSurfArea:0.##}.");
+        Console.WriteLine($"The surface area of Neptune is {neptuneSurfArea:0.##}.");
 
     }
 }
