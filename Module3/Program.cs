@@ -268,7 +268,6 @@
 
             Console.WriteLine($"Payment method: {finalPaymentMethod},  Amount paid: {total:0.##}");
 
-
         }
     }
 }
