@@ -41,9 +41,20 @@ public class Program
         * (Hint: The formula for the surface area of a sphere is A=4πr2 (use Math.PI instead of π)
         */
         mercurySurfArea = 4 * Math.PI * Math.Pow(mercuryRadius,2);
+        venusSurfArea = 4 * Math.PI * Math.Pow(venusRadius, 2);
+        earthSurfArea = 4 * Math.PI * Math.Pow(earthRadius, 2);
+        marsSurfArea = 4 * Math.PI * Math.Pow(marsRadius, 2);
+        jupterSurfArea = 4 * Math.PI * Math.Pow(jupterRadius, 2);
+        saturnSurfArea = 4 * Math.PI * Math.Pow(saturnRadius, 2);
+        uranusSurfArea = 4 * Math.PI * Math.Pow(uranusRadius, 2);
+        neptuneSurfArea = 4 * Math.PI * Math.Pow(neptuneRadius, 2);
 
 
         // STEP 4: Output a friendly sentence to the console stating the surface area of each of the planets using Console.Write()
         Console.WriteLine($"The surface area of Mercury is ${String.Format("{0:0.##}", mercurySurfArea)}.");
+        Console.WriteLine($"The surface area of Venus is ${String.Format("{0:0.##}", venusSurfArea)}.");
+        Console.WriteLine($"The surface area of Earth is ${String.Format("{0:0.##}",earthSurfArea)}.");
+        Console.WriteLine($"The surface area of Mars is ${String.Format("{0:0.##}", marsSurfArea)}.");
+
     }
 }
