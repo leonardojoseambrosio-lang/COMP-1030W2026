@@ -40,6 +40,10 @@ public class Program
         /* STEP 3: Set each of the above variables declared in STEP 2 to the surface area using an expression
         * (Hint: The formula for the surface area of a sphere is A=4πr2 (use Math.PI instead of π)
         */
+        mercurySurfArea = 4 * Math.PI * Math.Pow(mercuryRadius,2);
+
+
         // STEP 4: Output a friendly sentence to the console stating the surface area of each of the planets using Console.Write()
+        Console.WriteLine($"The surface area of Mercury is ${String.Format("{0:0.##}", mercurySurfArea)}.");
     }
 }
