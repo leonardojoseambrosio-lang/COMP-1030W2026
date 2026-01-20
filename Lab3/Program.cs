@@ -51,14 +51,19 @@ public class Program
 
 
         // STEP 4: Output a friendly sentence to the console stating the surface area of each of the planets using Console.Write()
-        Console.WriteLine($"The surface area of Mercury is ${String.Format("{0:0.##}", mercurySurfArea)}.");
-        Console.WriteLine($"The surface area of Venus is ${String.Format("{0:0.##}", venusSurfArea)}.");
-        Console.WriteLine($"The surface area of Earth is ${String.Format("{0:0.##}",earthSurfArea)}.");
-        Console.WriteLine($"The surface area of Mars is ${String.Format("{0:0.##}", marsSurfArea)}.");
+        Console.WriteLine("---The Surface Area of Each of the Planets---");
+        Console.WriteLine("---------------------------------------------");
+        Console.WriteLine($"The surface area of Mercury is {String.Format("{0:0.##}", mercurySurfArea)}.");
+        Console.WriteLine($"The surface area of Venus is {String.Format("{0:0.##}", venusSurfArea)}.");
+        Console.WriteLine($"The surface area of Earth is {String.Format("{0:0.##}",earthSurfArea)}.");
+        Console.WriteLine($"The surface area of Mars is {String.Format("{0:0.##}", marsSurfArea)}.");
         Console.WriteLine($"The surface area of Jupter is {jupterSurfArea:0.##}.");
         Console.WriteLine($"The surface area of Saturn is {saturnSurfArea:0.##}.");
         Console.WriteLine($"The surface area of Uranus is {uranusSurfArea:0.##}.");
         Console.WriteLine($"The surface area of Neptune is {neptuneSurfArea:0.##}.");
+        Console.WriteLine("---------------------------------------------");
+
+        //Complete
 
     }
 }
