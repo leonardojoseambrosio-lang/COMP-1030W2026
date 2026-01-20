@@ -26,7 +26,7 @@ public class Program
         double neptuneRadius = 24600.0; //Km
 
         // STEP 2: For each of the above variables, declare a new variable to hold the surface area using an appropriate real number type
-        //Variables to hold the surface area
+        //Variables to hold the surface area - step 2 complete
         double mercurySurfArea;
         double venusSurfArea;
         double earthSurfArea;
