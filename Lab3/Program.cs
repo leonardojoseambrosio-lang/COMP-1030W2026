@@ -13,6 +13,17 @@ public class Program
         // Lab 3 - COMP 1030 Programming Fundamentals
 
         // STEP 1: Determine the radius of each of the planets of the solar system (in kilometres) and declare a variable for each using an appropriate real number type
+
+        //Variables - Planets Radius
+        double mercuryRadius = ;
+        double venusRadius = ;
+        double earthRadius =;
+        double marsRadius =;
+        double jupterRadius =;
+        double saturnRadius =;
+        double uranusRadius =;
+        double neptuneRadius =;
+
         // STEP 2: For each of the above variables, declare a new variable to hold the surface area using an appropriate real number type
         /* STEP 3: Set each of the above variables declared in STEP 2 to the surface area using an expression
         * (Hint: The formula for the surface area of a sphere is A=4πr2 (use Math.PI instead of π)
