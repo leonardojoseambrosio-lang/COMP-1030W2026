@@ -15,14 +15,15 @@ public class Program
         // STEP 1: Determine the radius of each of the planets of the solar system (in kilometres) and declare a variable for each using an appropriate real number type
 
         //Variables - Planets Radius
-        double mercuryRadius = ;
-        double venusRadius = ;
-        double earthRadius =;
-        double marsRadius =;
-        double jupterRadius =;
-        double saturnRadius =;
-        double uranusRadius =;
-        double neptuneRadius =;
+        //Site with the values - https://www.wolframalpha.com/input?i=planets+radius
+        double mercuryRadius = 2440; //Km
+        double venusRadius = 6050; //Km
+        double earthRadius = 6371.009; //Km
+        double marsRadius = 3390; //Km
+        double jupterRadius = 69950; //Km
+        double saturnRadius = 58300; //Km
+        double uranusRadius = 25360; //Km
+        double neptuneRadius = 24600; //Km
 
         // STEP 2: For each of the above variables, declare a new variable to hold the surface area using an appropriate real number type
         /* STEP 3: Set each of the above variables declared in STEP 2 to the surface area using an expression
