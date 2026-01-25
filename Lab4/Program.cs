@@ -16,6 +16,9 @@ public class Program
         string day = localDate.ToString("dddd");
         string hourString = localDate.ToString("%H");
 
+        //Aditional variable to show hour and minutes
+        string hourAndMinutes = localDate.ToString("%h:mm:tt");
+
         // STEP 2b: Examine the below line of code - we need to convert the variable hour to an integer (so we can use relational operators later)
         int hour = Int32.Parse(hourString);
 
@@ -27,11 +30,11 @@ public class Program
             // STEP 5a: It is either Saturday or Sunday, so now we need an if/else condition to see whether it is time to wake up or not
             if (hour >= 9)
             {
-                Console.WriteLine($"It's {hourString}. It's time to wake up and enjoy your day!");
+                Console.WriteLine($"It's {hourAndMinutes}. It's time to wake up and enjoy your day!");
             }
             else
             {
-                Console.WriteLine($"It's {hourString}. It is not yet time to get out of bed...");
+                Console.WriteLine($"It's {hourAndMinutes}. It is not yet time to get out of bed...");
             }
         }
         else
