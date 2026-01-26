@@ -30,32 +30,33 @@ public class Program
             // STEP 5a: It is either Saturday or Sunday, so now we need an if/else condition to see whether it is time to wake up or not
             if (hour >= 9)
             {
+                // STEP 5b: It is 9am or later, so output a message to the console that it is the weekend and it is time to wake up and enjoy the day
                 Console.WriteLine($"It's {hourAndMinutes}. It's time to wake up and enjoy your day!");
             }
             else
             {
+                // STEP 5c: It is not yet 9am, so output a message to the console that it not yet time to get up
                 Console.WriteLine($"It's {hourAndMinutes}. It is not yet time to get out of bed...");
             }
         }
         else
         {
+            // STEP 4: Create an 'else' structure here for the part of the program that deals with weekdays
             Console.WriteLine("Today is a weekday.");
             Console.WriteLine($"Hour: {hour}");
+            // STEP 6a: We need to create a condition that checks to see whether it is 6am or later
+            if (hour >= 6)
+            {
+                // STEP 6b: It is indeed 6am or later, so output a message to the console that it is time to get up and go to work
+                Console.WriteLine($"It's {hourAndMinutes}.It is time to wake up and get ready for the workday.");
+            }
+            else
+            {
+                // STEP 6c: It is not yet 6am, so output a message to the console that it is not yet time to wake up
+                Console.WriteLine($"It's {hourAndMinutes}. Go back to your bed...");
+            }
         }
-
-
+       
         
-
-        // STEP 5b: It is 9am or later, so output a message to the console that it is the weekend and it is time to wake up and enjoy the day
-
-        // STEP 5c: It is not yet 9am, so output a message to the console that it not yet time to get up
-
-        // STEP 4: Create an 'else' structure here for the part of the program that deals with weekdays
-
-        // STEP 6a: We need to create a condition that checks to see whether it is 6am or later
-
-        // STEP 6b: It is indeed 6am or later, so output a message to the console that it is time to get up and go to work
-
-        // STEP 6c: It is not yet 6am, so output a message to the console that it is not yet time to wake up
     }
 }
