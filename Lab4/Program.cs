@@ -43,7 +43,6 @@ public class Program
         {
             // STEP 4: Create an 'else' structure here for the part of the program that deals with weekdays
             Console.WriteLine("Today is a weekday.");
-            Console.WriteLine($"Hour: {hour}");
             // STEP 6a: We need to create a condition that checks to see whether it is 6am or later
             if (hour >= 6)
             {
