@@ -21,7 +21,27 @@ public class Program
 
         // STEP 3: Create an 'if' condition to check whether it is the weekend (hint: you might consider the equality operator and the OR logical operator here)
 
-        // STEP 5a: It is either Saturday or Sunday, so now we need an if/else condition to see whether it is time to wake up or not
+        if (day == "Saturday" || day == "Sunday")
+        {
+            Console.WriteLine($"Today is weekend!");
+            // STEP 5a: It is either Saturday or Sunday, so now we need an if/else condition to see whether it is time to wake up or not
+            if (hour >= 9)
+            {
+                Console.WriteLine($"It's {hourString}. It's time to wake up and enjoy your day!");
+            }
+            else
+            {
+                Console.WriteLine($"It's {hourString}. It is not yet time to get out of bed...");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Today is a weekday.");
+            Console.WriteLine($"Hour: {hour}");
+        }
+
+
+        
 
         // STEP 5b: It is 9am or later, so output a message to the console that it is the weekend and it is time to wake up and enjoy the day
 
