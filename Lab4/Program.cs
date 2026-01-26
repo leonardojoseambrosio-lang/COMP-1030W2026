@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Name: Leonardo Jose Ambrosio
+ID: 200657215
+Date: Jan/26/2026
+Lab 4 - COMP 1030 Programming Fundamentals
+*/
+
+using System;
 
 public class Program
 {
@@ -26,7 +33,7 @@ public class Program
 
         if (day == "Saturday" || day == "Sunday")
         {
-            Console.WriteLine($"Today is weekend!");
+            Console.WriteLine($"{day} - Today is weekend!");
             // STEP 5a: It is either Saturday or Sunday, so now we need an if/else condition to see whether it is time to wake up or not
             if (hour >= 9)
             {
@@ -42,7 +49,7 @@ public class Program
         else
         {
             // STEP 4: Create an 'else' structure here for the part of the program that deals with weekdays
-            Console.WriteLine("Today is a weekday.");
+            Console.WriteLine($"{day} - Today is a weekday.");
             // STEP 6a: We need to create a condition that checks to see whether it is 6am or later
             if (hour >= 6)
             {
