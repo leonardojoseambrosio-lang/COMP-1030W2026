@@ -1,6 +1,11 @@
-﻿using System;
-using System.Diagnostics.CodeAnalysis;
+﻿/*
+Name: Leonardo Jose Ambrosio
+ID: 200657215
+Date: Jan/27/2026
+Lab 4 - COMP 1030 Programming Fundamentals
+*/
 
+using System;
 public class Program
 {
     public static void Main(string[] args)
@@ -145,14 +150,6 @@ public class Program
                     Console.WriteLine($"TAX                                                 ${tax:0.00}");
                     Console.WriteLine(dashLeader);
                     Console.WriteLine($"TOTAL                                               ${total:0.00}");
-
-
-
-
-
-
-
-
 
                 }
             }
