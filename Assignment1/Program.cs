@@ -54,8 +54,40 @@ public class Program
             double area = lengthNumber * widthNumber;
             area = Math.Round(area, 1);
             Console.WriteLine($"Flooring area: {area}");
-            
-            //Option A 
+            Console.WriteLine($"The flooring area is: {area} sq. ft.");
+
+            //Option A
+            if (flooringChoice == "A")
+            {
+                string flooringType = hardwood;
+                double flooringPrice = hardwoodPrice;
+                Console.WriteLine($"Option A - {flooringType} - ${flooringPrice} sq. ft.");
+                double subTotal = area * flooringPrice;
+                Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+            }
+            //Option B
+            else if (flooringChoice == "B")
+            {
+                string flooringType = greeceWhite;
+                double flooringPrice = greeceWhitePrice;
+                Console.WriteLine($"Option B - {flooringType} - ${flooringPrice} sq. ft.");
+                double subTotal = area * flooringPrice;
+                Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+            }
+            //Option C
+            else if (flooringChoice == "C")
+            {
+                string flooringType = grayBamboo;
+                double flooringPrice = grayBambooPrice;
+                Console.WriteLine($"Option C - {flooringType} - ${flooringPrice} sq. ft.");
+                double subTotal = area * flooringPrice;
+                Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+            }
+            //Invalid option
+            else
+            {
+                Console.WriteLine("You did not select a valid option.");
+            }
 
 
         }
