@@ -2,7 +2,7 @@
 Name: Leonardo Jose Ambrosio
 ID: 200657215
 Date: Jan/27/2026
-Lab 4 - COMP 1030 Programming Fundamentals
+Assignment 1 - COMP 1030 Programming Fundamentals
 */
 
 using System;
