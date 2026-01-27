@@ -24,75 +24,83 @@ public class Program
         flooringChoice = flooringChoice.Trim().ToUpper();
         Console.WriteLine(flooringChoice);
 
-        //Enter length and bool to lengthParsable
-        Console.Write("Enter length (only one decimal point. Additional points will be rounded): ");
-        string lengthString = Console.ReadLine();
-        double lengthNumber;
-        bool lengthParsable = double.TryParse(lengthString, out lengthNumber);
+        if(flooringChoice == "" || !"ABC".Contains(flooringChoice))
+        {
+            Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
+        }
+        else
+        {
+            //Enter length and bool to lengthParsable
+            Console.Write("Enter length (only one decimal point. Additional points will be rounded): ");
+            string lengthString = Console.ReadLine();
+            double lengthNumber;
+            bool lengthParsable = double.TryParse(lengthString, out lengthNumber);
 
 
-        //Enter width and bool to widthParsable
-        Console.Write("Enter width (only one decimal point. Additional points will be rounded): ");
-        string widthString = Console.ReadLine();
-        double widthNumber;
-        bool widthParsable = double.TryParse(widthString, out widthNumber);
+            //Enter width and bool to widthParsable
+            Console.Write("Enter width (only one decimal point. Additional points will be rounded): ");
+            string widthString = Console.ReadLine();
+            double widthNumber;
+            bool widthParsable = double.TryParse(widthString, out widthNumber);
 
-        //conditions (if)
+            //conditions (if)
 
-        if (lengthParsable && widthParsable && flooringChoice != "") {
-
-            //converting String (lengthString) to Double(lengthNumber)
-            lengthNumber = Convert.ToDouble(lengthString);
-            lengthNumber = Math.Round(lengthNumber, 1);
-            Console.WriteLine($"Length: {lengthNumber}");
-            //converting String (widthString) to Double(widthNumber)
-            widthNumber = Convert.ToDouble(widthString);
-            widthNumber = Math.Round(widthNumber, 1);
-            Console.WriteLine($"Width: {widthNumber}");
-
-            //calculating area
-            double area = lengthNumber * widthNumber;
-            area = Math.Round(area, 1);
-            Console.WriteLine($"Flooring area: {area}");
-            Console.WriteLine($"The flooring area is: {area} sq. ft.");
-
-            //Option A
-            if (flooringChoice == "A")
+            if (lengthParsable && widthParsable)
             {
-                string flooringType = hardwood;
-                double flooringPrice = hardwoodPrice;
-                Console.WriteLine($"Option A - {flooringType} - ${flooringPrice} sq. ft.");
-                double subTotal = area * flooringPrice;
-                Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+
+                //converting String (lengthString) to Double(lengthNumber)
+                lengthNumber = Convert.ToDouble(lengthString);
+                lengthNumber = Math.Round(lengthNumber, 1);
+                Console.WriteLine($"Length: {lengthNumber}");
+                //converting String (widthString) to Double(widthNumber)
+                widthNumber = Convert.ToDouble(widthString);
+                widthNumber = Math.Round(widthNumber, 1);
+                Console.WriteLine($"Width: {widthNumber}");
+
+                //calculating area
+                double area = lengthNumber * widthNumber;
+                area = Math.Round(area, 1);
+                Console.WriteLine($"Flooring area: {area}");
+                Console.WriteLine($"The flooring area is: {area} sq. ft.");
+
+                //Option A
+                if (flooringChoice == "A")
+                {
+                    bool validOption = true;
+
+                    string flooringType = hardwood;
+                    double flooringPrice = hardwoodPrice;
+                    Console.WriteLine($"Option A - {flooringType} - ${flooringPrice} sq. ft.");
+                    double subTotal = area * flooringPrice;
+                    Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+                }
+                //Option B
+                else if (flooringChoice == "B")
+                {
+                    bool validOption = true;
+
+                    string flooringType = greeceWhite;
+                    double flooringPrice = greeceWhitePrice;
+                    Console.WriteLine($"Option B - {flooringType} - ${flooringPrice} sq. ft.");
+                    double subTotal = area * flooringPrice;
+                    Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+                }
+                //Option C
+                else if (flooringChoice == "C")
+                {
+                    bool validOption = true;
+
+                    string flooringType = grayBamboo;
+                    double flooringPrice = grayBambooPrice;
+                    Console.WriteLine($"Option C - {flooringType} - ${flooringPrice} sq. ft.");
+                    double subTotal = area * flooringPrice;
+                    Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+                }
             }
-            //Option B
-            else if (flooringChoice == "B")
-            {
-                string flooringType = greeceWhite;
-                double flooringPrice = greeceWhitePrice;
-                Console.WriteLine($"Option B - {flooringType} - ${flooringPrice} sq. ft.");
-                double subTotal = area * flooringPrice;
-                Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
-            }
-            //Option C
-            else if (flooringChoice == "C")
-            {
-                string flooringType = grayBamboo;
-                double flooringPrice = grayBambooPrice;
-                Console.WriteLine($"Option C - {flooringType} - ${flooringPrice} sq. ft.");
-                double subTotal = area * flooringPrice;
-                Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
-            }
-            //Invalid option
             else
             {
-                Console.WriteLine("You did not select a valid option.");
+                Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
             }
-
-
-        }
-        else{
-            Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
         }
 
     }
