@@ -24,7 +24,8 @@ public class Program
         flooringChoice = flooringChoice.Trim().ToUpper();
         Console.WriteLine(flooringChoice);
 
-        if(flooringChoice == "" || !"ABC".Contains(flooringChoice))
+
+        if (flooringChoice == "" || !"ABC".Contains(flooringChoice))
         {
             Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
         }
@@ -43,9 +44,15 @@ public class Program
             double widthNumber;
             bool widthParsable = double.TryParse(widthString, out widthNumber);
 
+ 
+
             //conditions (if)
 
-            if (lengthParsable && widthParsable)
+            if (!lengthParsable || !widthParsable)
+            {
+                Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
+            }
+            else
             {
 
                 //converting String (lengthString) to Double(lengthNumber)
@@ -63,13 +70,18 @@ public class Program
                 Console.WriteLine($"Flooring area: {area}");
                 Console.WriteLine($"The flooring area is: {area} sq. ft.");
 
+                //Variables to receive the result to manipulate the receipt
+                string flooringType = "";
+                double flooringPrice = 0;
+                bool validOption = false;
+
                 //Option A
                 if (flooringChoice == "A")
                 {
-                    bool validOption = true;
+                    validOption = true;
 
-                    string flooringType = hardwood;
-                    double flooringPrice = hardwoodPrice;
+                    flooringType = hardwood;
+                    flooringPrice = hardwoodPrice;
                     Console.WriteLine($"Option A - {flooringType} - ${flooringPrice} sq. ft.");
                     double subTotal = area * flooringPrice;
                     Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
@@ -77,10 +89,10 @@ public class Program
                 //Option B
                 else if (flooringChoice == "B")
                 {
-                    bool validOption = true;
+                    validOption = true;
 
-                    string flooringType = greeceWhite;
-                    double flooringPrice = greeceWhitePrice;
+                    flooringType = greeceWhite;
+                    flooringPrice = greeceWhitePrice;
                     Console.WriteLine($"Option B - {flooringType} - ${flooringPrice} sq. ft.");
                     double subTotal = area * flooringPrice;
                     Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
@@ -88,19 +100,47 @@ public class Program
                 //Option C
                 else if (flooringChoice == "C")
                 {
-                    bool validOption = true;
+                    validOption = true;
 
-                    string flooringType = grayBamboo;
-                    double flooringPrice = grayBambooPrice;
+                    flooringType = grayBamboo;
+                    flooringPrice = grayBambooPrice;
                     Console.WriteLine($"Option C - {flooringType} - ${flooringPrice} sq. ft.");
                     double subTotal = area * flooringPrice;
                     Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
                 }
+
+                    //Receipt area
+                    if (validOption)
+                    {
+                    int receiptWidth = 30;
+                    string dotLeader = new string('.', receiptWidth);
+                    
+                    int receiptDash = 30;
+                    string dashLeader = new string('-', receiptDash);
+                    
+                    string flooringPriceReceipt = Convert.ToString(flooringPrice);
+                    int dotLeaderItem = flooringType.Length + flooringPriceReceipt.Length;
+                    string dotItemLine = dotLeader.Remove(0,dotLeaderItem);
+
+                    //print of Receipt
+                    Console.WriteLine(dotLeader);
+                    Console.WriteLine($"{flooringType}{dotItemLine}{flooringPrice}");
+                    
+                    Console.WriteLine(dashLeader);
+
+
+
+
+                    
+
+
+
+
+                }
             }
-            else
-            {
-                Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
-            }
+
+
+
         }
 
     }
