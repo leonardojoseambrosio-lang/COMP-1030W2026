@@ -24,26 +24,44 @@ public class Program
         flooringChoice = flooringChoice.Trim().ToUpper();
         Console.WriteLine(flooringChoice);
 
+        //Enter length and bool to lengthParsable
         Console.Write("Enter length (only one decimal point. Additional points will be rounded): ");
         string lengthString = Console.ReadLine();
         double lengthNumber;
         bool lengthParsable = double.TryParse(lengthString, out lengthNumber);
 
-        lengthNumber = Convert.ToDouble(lengthString);
-        lengthNumber = Math.Round(lengthNumber, 1);
-        Console.WriteLine($"{lengthNumber}");
 
-
+        //Enter width and bool to widthParsable
         Console.Write("Enter width (only one decimal point. Additional points will be rounded): ");
         string widthString = Console.ReadLine();
         double widthNumber;
         bool widthParsable = double.TryParse(widthString, out widthNumber);
-        widthNumber = Convert.ToDouble(widthString);
-        widthNumber = Math.Round(widthNumber, 1);
-        Console.WriteLine($"{widthNumber}");
 
-        //conditions
+        //conditions (if)
 
+        if (lengthParsable && widthParsable && flooringChoice != "") {
+
+            //converting String (lengthString) to Double(lengthNumber)
+            lengthNumber = Convert.ToDouble(lengthString);
+            lengthNumber = Math.Round(lengthNumber, 1);
+            Console.WriteLine($"Length: {lengthNumber}");
+            //converting String (widthString) to Double(widthNumber)
+            widthNumber = Convert.ToDouble(widthString);
+            widthNumber = Math.Round(widthNumber, 1);
+            Console.WriteLine($"Width: {widthNumber}");
+
+            //calculating area
+            double area = lengthNumber * widthNumber;
+            area = Math.Round(area, 1);
+            Console.WriteLine($"Flooring area: {area}");
+            
+            //Option A 
+
+
+        }
+        else{
+            Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
+        }
 
     }
 }
