@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 public class Program
 {
@@ -22,7 +23,6 @@ public class Program
         Console.Write("Enter your choice: ");
         string flooringChoice = Console.ReadLine();
         flooringChoice = flooringChoice.Trim().ToUpper();
-        Console.WriteLine(flooringChoice);
 
 
         if (flooringChoice == "" || !"ABC".Contains(flooringChoice))
@@ -58,22 +58,22 @@ public class Program
                 //converting String (lengthString) to Double(lengthNumber)
                 lengthNumber = Convert.ToDouble(lengthString);
                 lengthNumber = Math.Round(lengthNumber, 1);
-                Console.WriteLine($"Length: {lengthNumber}");
+                
                 //converting String (widthString) to Double(widthNumber)
                 widthNumber = Convert.ToDouble(widthString);
                 widthNumber = Math.Round(widthNumber, 1);
-                Console.WriteLine($"Width: {widthNumber}");
+                
 
                 //calculating area
                 double area = lengthNumber * widthNumber;
                 area = Math.Round(area, 1);
-                Console.WriteLine($"Flooring area: {area}");
-                Console.WriteLine($"The flooring area is: {area} sq. ft.");
+                                
 
                 //Variables to receive the result to manipulate the receipt
                 string flooringType = "";
                 double flooringPrice = 0;
                 bool validOption = false;
+                double subTotal = 0;
 
                 //Option A
                 if (flooringChoice == "A")
@@ -82,9 +82,8 @@ public class Program
 
                     flooringType = hardwood;
                     flooringPrice = hardwoodPrice;
-                    Console.WriteLine($"Option A - {flooringType} - ${flooringPrice} sq. ft.");
-                    double subTotal = area * flooringPrice;
-                    Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+                    
+                    
                 }
                 //Option B
                 else if (flooringChoice == "B")
@@ -93,9 +92,8 @@ public class Program
 
                     flooringType = greeceWhite;
                     flooringPrice = greeceWhitePrice;
-                    Console.WriteLine($"Option B - {flooringType} - ${flooringPrice} sq. ft.");
-                    double subTotal = area * flooringPrice;
-                    Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+                    
+
                 }
                 //Option C
                 else if (flooringChoice == "C")
@@ -104,34 +102,54 @@ public class Program
 
                     flooringType = grayBamboo;
                     flooringPrice = grayBambooPrice;
-                    Console.WriteLine($"Option C - {flooringType} - ${flooringPrice} sq. ft.");
-                    double subTotal = area * flooringPrice;
-                    Console.WriteLine($"SUBTOTAL is: ${subTotal:0.##}");
+                    
+
                 }
 
-                    //Receipt area
-                    if (validOption)
+                //Final Output
+                Console.WriteLine($"\n\nOption {flooringChoice} - {flooringType} - ${flooringPrice} sq. ft.");
+                Console.WriteLine($"Length ot the Floor: {lengthNumber} ft.");
+                Console.WriteLine($"Width of the Floor: {widthNumber} ft.");
+                Console.WriteLine($"Area of the Floor: {area} sq. ft.");
+                
+                subTotal = area * flooringPrice;
+                Console.WriteLine($"TOTAL: ${subTotal:0.##}");
+
+                //Receipt area
+                if (validOption)
                     {
-                    int receiptWidth = 30;
+                    int receiptWidth = 60;
                     string dotLeader = new string('.', receiptWidth);
                     
-                    int receiptDash = 30;
+                    int receiptDash = 60;
                     string dashLeader = new string('-', receiptDash);
                     
                     string flooringPriceReceipt = Convert.ToString(flooringPrice);
-                    int dotLeaderItem = flooringType.Length + flooringPriceReceipt.Length;
+                    string areaReceipt = Convert.ToString(area);
+                    int dotLeaderItem = flooringType.Length + flooringPriceReceipt.Length + areaReceipt.Length + 12;
                     string dotItemLine = dotLeader.Remove(0,dotLeaderItem);
 
+                    //subTotal = area * flooringPrice;
+                    double tax = subTotal * .13;
+                    double total = subTotal * 1.13;
+
                     //print of Receipt
+                    Console.WriteLine("\n\n\r### RECEIPT ###");
                     Console.WriteLine(dotLeader);
-                    Console.WriteLine($"{flooringType}{dotItemLine}{flooringPrice}");
+                    Console.WriteLine($"ITEM{dotItemLine}.........PRICE X AREA");
+                    Console.WriteLine($"{flooringType}{dotItemLine}${flooringPrice} X {area} sq. ft.");
                     
                     Console.WriteLine(dashLeader);
 
+                    Console.WriteLine($"SUBTOTAL                                            ${subTotal:0.00}");
+                    Console.WriteLine($"TAX                                                 ${tax:0.00}");
+                    Console.WriteLine(dashLeader);
+                    Console.WriteLine($"TOTAL                                               ${total:0.00}");
 
 
 
-                    
+
+
 
 
 
