@@ -32,7 +32,7 @@ public class Program
 
         if (flooringChoice == "" || !"ABC".Contains(flooringChoice))
         {
-            Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
+            Console.WriteLine("You entered an invalid value. Unfortunately, we can't proceed.");
         }
         else
         {
@@ -55,7 +55,7 @@ public class Program
 
             if (!lengthParsable || !widthParsable)
             {
-                Console.WriteLine("You enter an invalid value. Unfortunatelly we can't procced.");
+                Console.WriteLine("You entered an invalid value. Unfortunately, we can't proceed.");
             }
             else
             {
