@@ -15,11 +15,13 @@ public class Program
         string grayBamboo = "Gray Bamboo";
         double grayBambooPrice = 6.29;
 
-        Console.WriteLine($"{hardwood} - ${hardwoodPrice}");
-        Console.WriteLine($"{greeceWhite} - ${greeceWhitePrice}");
-        Console.WriteLine($"{grayBamboo} - ${grayBambooPrice}");
+        Console.WriteLine("Select the flooring type:");
+        Console.WriteLine($"A){hardwood} - ${hardwoodPrice} per sq. ft.\r\nB){greeceWhite} - ${greeceWhitePrice} per sq. ft.\r\nC){grayBamboo} - ${grayBambooPrice} per sq. ft.");
 
-
+        //Enter a valid option
+        string flooringChoice = Console.ReadLine();
+        flooringChoice = flooringChoice.Trim().ToUpper();
+        Console.WriteLine(flooringChoice);
 
 
     }
