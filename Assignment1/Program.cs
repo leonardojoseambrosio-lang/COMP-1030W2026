@@ -19,9 +19,30 @@ public class Program
         Console.WriteLine($"A){hardwood} - ${hardwoodPrice} per sq. ft.\r\nB){greeceWhite} - ${greeceWhitePrice} per sq. ft.\r\nC){grayBamboo} - ${grayBambooPrice} per sq. ft.");
 
         //Enter a valid option
+        Console.Write("Enter your choice: ");
         string flooringChoice = Console.ReadLine();
         flooringChoice = flooringChoice.Trim().ToUpper();
         Console.WriteLine(flooringChoice);
+
+        Console.Write("Enter length (only one decimal point. Additional points will be rounded): ");
+        string lengthString = Console.ReadLine();
+        double lengthNumber;
+        bool lengthParsable = double.TryParse(lengthString, out lengthNumber);
+
+        lengthNumber = Convert.ToDouble(lengthString);
+        lengthNumber = Math.Round(lengthNumber, 1);
+        Console.WriteLine($"{lengthNumber}");
+
+
+        Console.Write("Enter width (only one decimal point. Additional points will be rounded): ");
+        string widthString = Console.ReadLine();
+        double widthNumber;
+        bool widthParsable = double.TryParse(widthString, out widthNumber);
+        widthNumber = Convert.ToDouble(widthString);
+        widthNumber = Math.Round(widthNumber, 1);
+        Console.WriteLine($"{widthNumber}");
+
+        //conditions
 
 
     }
