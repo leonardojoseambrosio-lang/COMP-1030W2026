@@ -28,15 +28,25 @@ public class Program
 
 
                 // Format output: add extra space for single-digit numbers
-                if (product < 10)
+
+                 
+                if (product == 10 * x) //Last comma removed
                 {
-                    Console.Write($"{product},  ");
+                    Console.Write(product);
                 }
                 else
                 {
-                    Console.Write($"{product}, ");
-                }
 
+                    if (product < 10)
+                    {
+                        Console.Write($"{product},  ");
+
+                    }
+                    else
+                    {
+                        Console.Write($"{product}, ");
+                    }
+                }
                 y++;
 
             }
