@@ -6,8 +6,6 @@ public class Program
     public static void Main(string[] args)
     {
 
-
-
         // Outer loop: iterate through rows 1 to 10
         //FOR row FROM 1 TO 10 DO
         // Outer loop: iterate through rows 1 to 10
@@ -23,10 +21,8 @@ public class Program
             while (y <= 10)
             {
 
-                int product = x * y;
-
                 // Calculate the product of current row and column
-
+                int product = x * y;
 
 
                 // Format output: add extra space for single-digit numbers
@@ -39,19 +35,12 @@ public class Program
                     Console.Write($"{product}, ");
                 }
 
-
-
                 y++;
-
-               
 
             }
 
-
             // Move to the next row after finishing all columns
             Console.WriteLine();
-
-
         }
 
     }
