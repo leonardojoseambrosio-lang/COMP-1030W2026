@@ -14,17 +14,15 @@ public class Program
 
        int y = 1;
        int product = x * y;
-       int verify = x * 10;
+       int verify = y * 10;
+
             Console.Write($"{product} ,");
 
-            if (product == 10)
+            if (product >= y * 10)
             {
-                Console.WriteLine("\nTest");
+                Console.Write($"\n{verify}");
             }
-          
-        
-      
-        
+              
       }
 
 
