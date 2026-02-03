@@ -1,0 +1,15 @@
+C:\COMP1030W\Lab5\obj\Debug\net10.0\Lab5.GeneratedMSBuildEditorConfig.editorconfig
+C:\COMP1030W\Lab5\obj\Debug\net10.0\Lab5.AssemblyInfoInputs.cache
+C:\COMP1030W\Lab5\obj\Debug\net10.0\Lab5.AssemblyInfo.cs
+C:\COMP1030W\Lab5\obj\Debug\net10.0\Lab5.csproj.CoreCompileInputs.cache
+C:\COMP1030W\Lab5\obj\Debug\net10.0\Lab5.sourcelink.json
+C:\COMP1030W\Lab5\bin\Debug\net10.0\Lab5.exe
+C:\COMP1030W\Lab5\bin\Debug\net10.0\Lab5.deps.json
+C:\COMP1030W\Lab5\bin\Debug\net10.0\Lab5.runtimeconfig.json
+C:\COMP1030W\Lab5\bin\Debug\net10.0\Lab5.dll
+C:\COMP1030W\Lab5\bin\Debug\net10.0\Lab5.pdb
+C:\COMP1030W\Lab5\obj\Debug\net10.0\Lab5.dll
+C:\COMP1030W\Lab5\obj\Debug\net10.0\refint\Lab5.dll
+C:\COMP1030W\Lab5\obj\Debug\net10.0\Lab5.pdb
+C:\COMP1030W\Lab5\obj\Debug\net10.0\Lab5.genruntimeconfig.cache
+C:\COMP1030W\Lab5\obj\Debug\net10.0\ref\Lab5.dll
