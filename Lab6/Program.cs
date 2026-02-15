@@ -20,18 +20,20 @@ public class Program{
         for (int i = 0; i < flavorsLength; i++)
         {
         // STEP 5: Inside the FOR() loop, output each element of the array to the Console
-            Console.WriteLine(flavors[i]);
+            Console.WriteLine($"{i+1}. {flavors[i]}");
         }
 
         // STEP 6: Output a simple sentence to the Console indicating to the user that you are about to list all the ice cream flavors available at your stand using a FOREACH() loop
         Console.WriteLine("\nSee bellow the ice cream flavors available (FOREACH):");
-        
+
         // STEP 7: Construct a FOREACH() loop that also outputs all of the elements of the same array
+        char c = 'A';
+
         foreach (string x in flavors)
         {
-
-        // STEP 8: Inside the FOREACH() loop, output each element of the array to the Console
-            Console.WriteLine(x);
+            Console.WriteLine(c);
+            c++;
+            
         }
 
 
