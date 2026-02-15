@@ -1,12 +1,14 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Globalization;
 
 public class Program{
 
     public static void Main(string[] args) {
 
         // STEP 1: Declare a new array (of type string), and initialize it with anywhere from 7 to 9 different ice cream flavors;
-        string[] flavors = new string[7];
-        flavors = new string[] {"Chocolate", "Strawberry", "Raspberry", "Blackberry", "Banana", "Mango", "Lime"};
+        
+        string[] flavors = new string[] {"Chocolate", "Strawberry", "Raspberry", "Blackberry", "Banana", "Mango", "Lime"};
 
         // STEP 2: Create a variable to contain the Length property of the array you created in STEP 1
         int flavorsLength = flavors.Length;
@@ -20,15 +22,20 @@ public class Program{
         // STEP 5: Inside the FOR() loop, output each element of the array to the Console
             Console.WriteLine(flavors[i]);
         }
-        
+
         // STEP 6: Output a simple sentence to the Console indicating to the user that you are about to list all the ice cream flavors available at your stand using a FOREACH() loop
+        Console.WriteLine("\nSee bellow the ice cream flavors available (FOREACH):");
         
         // STEP 7: Construct a FOREACH() loop that also outputs all of the elements of the same array
+        foreach (string x in flavors)
+        {
+
         // STEP 8: Inside the FOREACH() loop, output each element of the array to the Console
+            Console.WriteLine(x);
+        }
 
 
-
-    }
+        }
 
 
 
