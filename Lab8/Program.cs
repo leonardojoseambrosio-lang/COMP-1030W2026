@@ -82,7 +82,7 @@ class Program
         // STEP 15: Return something from the method - add a "howSerious" string variable above the switch() statement above, and set the value to various messages, escalating in seriousness
 
         // STEP 16a: Create a string variable (often called result) that assembles a string including the alert level, the message argument, and the new howSerious variable
-        string result = $"Alert level {level}. {message}. {howSerious}. {showDate}"; //Adding variable to show date in result (showDate)
+        string result = $"Alert level {level}. {message}. {howSerious} {showDate}"; //Adding variable to show date in result (showDate)
         // STEP 16b: Return the result string back to the program
         return result;
     }
@@ -101,7 +101,7 @@ class Program
         // STEP 13b: Change the order of the arguments in the above method call
         // STEP 13c: Named parameters avoids the issue of possibly passing method arguments in the wrong order
 
-        string alertMessage = Alert(message: "We are all out of coffee", sound: true, level: 3, date: false); //Variable date added to Alert() method.
+        string alertMessage = Alert(message: "We are all out of coffee", sound: true, level: 1, date: true); //Variable date added to Alert() method.
         Console.WriteLine(alertMessage);
     }
 }
