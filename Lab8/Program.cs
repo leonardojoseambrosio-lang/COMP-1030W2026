@@ -49,7 +49,7 @@ class Program
         
         if (sound)
         {
-            Console.Beep(200, 250);
+            Console.Beep(200, 1000);
         }
 
         // STEP 14: Do something interesting with the "level" parameter, by changing the color of the console (1 = green, 2 = yellow, 3 = red, otherwise black) using a switch() statement
