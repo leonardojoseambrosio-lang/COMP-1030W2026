@@ -22,7 +22,7 @@ class Program
     //public static string Alert(string message)
 
     // STEP 10: Add two more parameters to the method - alert level (type int), and whether a sound should be played (type bool)
-    public static string Alert(int level, string message, bool sound)
+    public static string Alert(int level, string message, bool sound, bool date)//fourth parameter added - date
     {
         // STEP 5: Write a message to the console with a message for the user
         // Console.WriteLine("This is a serious alert!");
