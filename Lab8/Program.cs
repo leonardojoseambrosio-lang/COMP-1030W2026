@@ -34,6 +34,19 @@ class Program
         // Console.WriteLine($"Alert level {level}: {message}!");
 
         // STEP 12: Create a condition where if sound is true, we make the console beep (Windows only)
+
+        //Condition for print date
+        string showDate; //string to receive the value of the date.
+
+        if (date)
+        {
+
+            showDate = DateTime.Now.ToString("MMM d, yyyy"); //formart Mount day, Year
+
+        }
+
+
+        
         if (sound)
         {
             Console.Beep(200, 250);
@@ -87,8 +100,7 @@ class Program
         //Alert(2, "Drop everything - this is a critical issue", true);
         // STEP 13b: Change the order of the arguments in the above method call
         // STEP 13c: Named parameters avoids the issue of possibly passing method arguments in the wrong order
-        //Alert(message: "Drop everything - this is a critcial issue", sound: true, level: 2);
-        //Alert(3, "We are all out of coffee", false);
+
         string alertMessage = Alert(message: "We are all out of coffee", sound: true, level: 3);
         Console.WriteLine(alertMessage);
     }
