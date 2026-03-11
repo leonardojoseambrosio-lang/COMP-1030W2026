@@ -41,7 +41,7 @@ class Program
         if (date)
         {
 
-            showDate = $"Date :{DateTime.Now.ToString("MMM d, yyyy")}"; //formart Mount day, Year
+            showDate = $"Date: {DateTime.Now.ToString("MMM d, yyyy")}"; //formart Mount day, Year
 
         }
 
