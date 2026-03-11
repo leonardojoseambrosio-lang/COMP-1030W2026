@@ -41,7 +41,7 @@ class Program
         if (date)
         {
 
-            showDate = DateTime.Now.ToString("MMM d, yyyy"); //formart Mount day, Year
+            showDate = $"Date :{DateTime.Now.ToString("MMM d, yyyy")}"; //formart Mount day, Year
 
         }
 
@@ -82,7 +82,7 @@ class Program
         // STEP 15: Return something from the method - add a "howSerious" string variable above the switch() statement above, and set the value to various messages, escalating in seriousness
 
         // STEP 16a: Create a string variable (often called result) that assembles a string including the alert level, the message argument, and the new howSerious variable
-        string result = $"Alert level {level}. {message}. {howSerious}";
+        string result = $"Alert level {level}. {message}. {howSerious}. {showDate}"; //Adding variable to show date in result (showDate)
         // STEP 16b: Return the result string back to the program
         return result;
     }
