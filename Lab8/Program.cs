@@ -36,7 +36,7 @@ class Program
         // STEP 12: Create a condition where if sound is true, we make the console beep (Windows only)
 
         //Condition for print date
-        string showDate; //string to receive the value of the date.
+        string showDate = ""; //string to receive the value of the date.
 
         if (date)
         {
@@ -101,7 +101,7 @@ class Program
         // STEP 13b: Change the order of the arguments in the above method call
         // STEP 13c: Named parameters avoids the issue of possibly passing method arguments in the wrong order
 
-        string alertMessage = Alert(message: "We are all out of coffee", sound: true, level: 3);
+        string alertMessage = Alert(message: "We are all out of coffee", sound: true, level: 3, date: true); //Variable date added to Alert() method.
         Console.WriteLine(alertMessage);
     }
 }
