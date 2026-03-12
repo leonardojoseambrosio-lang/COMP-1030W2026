@@ -19,7 +19,7 @@ class Program {
 
         //- Ask the user to guess the temperature.
         Console.WriteLine("### Welcome to the Temperature History Game ###");
-        
+        Console.WriteLine($"Random:{rnd}\nRandon -3:{rnd - 3}\nRandon +3:{rnd + 3}\n");
 
         int[] guess = new int[10];
         int index = 0;
@@ -36,16 +36,23 @@ class Program {
                     Console.WriteLine("Perfect!");
                     break;
                 }
-                else if (guess[index] >= rnd - 3 || guess[index] <= rnd + 3){
+                if (guess[index] < rnd - 3 ^ guess[index] > rnd + 3)
+                {
+                    Console.WriteLine("Too cold!");
+                    Console.WriteLine("Try again:");
+
+
+                }
+                else {
                     Console.WriteLine("Too warm!");
                     Console.WriteLine("Try again:");
-                    
+
                 }
 
             }
             else
             {
-                Console.WriteLine("Your lose a chance.\nType a number:");
+                Console.WriteLine("You lose a chance.\nType a number:");
             }
             
             //Console.WriteLine(guess[index]);
