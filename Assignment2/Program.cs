@@ -19,20 +19,41 @@ class Program {
 
         //- Ask the user to guess the temperature.
         Console.WriteLine("### Welcome to the Temperature History Game ###");
-        string typeYourAnsewer = Console.ReadLine();
+        
 
         int[] guess = new int[10];
-
-        if (Int32.TryParse(typeYourAnsewer, out guess[0]))
+        int index = 0;
+        while (index < 10)
         {
+            string typeYourAnsewer = Console.ReadLine();
 
-            guess[0] = Int32.Parse(typeYourAnsewer);
-        }
-        else { 
-            Console.WriteLine("Type a number.");
+            if (Int32.TryParse(typeYourAnsewer, out guess[0]))
+            {
+
+                guess[index] = Int32.Parse(typeYourAnsewer);
+
+                if (guess[index] == rnd) {
+                    Console.WriteLine("Perfect!");
+                    break;
+                }
+                else if (guess[index] >= rnd - 3 || guess[index] <= rnd + 3){
+                    Console.WriteLine("Too warm!");
+                    Console.WriteLine("Try again:");
+                    
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Your lose a chance.\nType a number:");
+            }
+            
+            //Console.WriteLine(guess[index]);
+            //index increment
+            index++;
         }
   
-        Console.WriteLine(guess[0]);
+        
 
 //- Provide feedback:
 //- Too warm
