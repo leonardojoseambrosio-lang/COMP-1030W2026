@@ -20,7 +20,7 @@ class Program
         //- Ask the user to guess the temperature.
         Console.WriteLine("### Welcome to the Temperature History Game ###");
 
-        Console.WriteLine($"Random:{rnd}\nRandon -3:{rnd - 3}\nRandon +3:{rnd + 3}\n");// - check rnd values (random number)
+        //Console.WriteLine($"Random:{rnd}\nRandon -3:{rnd - 3}\nRandon +3:{rnd + 3}\n");// - check rnd values (random number)
 
         Console.WriteLine("Enter temperature (10 - 40):");
 
@@ -30,7 +30,7 @@ class Program
         //loop condition
         while (index < 10)
         {
-            Console.WriteLine($"Index{index}");// - check index value
+            //Console.WriteLine($"Index{index}");// - check index value
             string typeYourAnsewer = Console.ReadLine();
 
             //Provide feedback:
@@ -79,7 +79,7 @@ class Program
         }
         //Store every guess in an array or list.
         //After the game ends, display all guesses.
-        Console.WriteLine("\nYour Guess:");
+        Console.WriteLine("\nYour guesses were:");
 
         for (int i = 0; i < index; i++)
         {
@@ -95,5 +95,6 @@ class Program
             }
     
         }
+        Console.WriteLine("");
     }
 }
