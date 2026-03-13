@@ -14,60 +14,77 @@ class Program {
         //- Generate a random temperature between 10 and 40.
         Random randomNum = new Random();
         int rnd = randomNum.Next(10, 41);//creates a random number between 10 and 40.
-        
-        Console.WriteLine(rnd);
-
+       
         //- Ask the user to guess the temperature.
         Console.WriteLine("### Welcome to the Temperature History Game ###");
-        Console.WriteLine($"Random:{rnd}\nRandon -3:{rnd - 3}\nRandon +3:{rnd + 3}\n");
+       
+        //Console.WriteLine($"Random:{rnd}\nRandon -3:{rnd - 3}\nRandon +3:{rnd + 3}\n");// - check rnd values (random number)
+
+        Console.WriteLine("Enter temperature (10 - 40):");
 
         int[] guess = new int[10];
         int index = 0;
+
+        //loop condition
         while (index < 10)
         {
+            //Console.WriteLine($"Index{index}");// - check index value
             string typeYourAnsewer = Console.ReadLine();
+
+            //Provide feedback:
 
             if (Int32.TryParse(typeYourAnsewer, out guess[0]))
             {
 
                 guess[index] = Int32.Parse(typeYourAnsewer);
 
+                //- Perfect
                 if (guess[index] == rnd) {
                     Console.WriteLine("Perfect!");
                     break;
                 }
+                //- Too cold
                 if (guess[index] < rnd - 3 ^ guess[index] > rnd + 3)
                 {
                     Console.WriteLine("Too cold!");
-                    Console.WriteLine("Try again:");
+                    
 
 
                 }
-                else {
+                //- Too warm
+                else
+                {
                     Console.WriteLine("Too warm!");
-                    Console.WriteLine("Try again:");
-
                 }
 
             }
             else
             {
-                Console.WriteLine("You lose a chance.\nType a number:");
+                Console.WriteLine("\nIt's not a number. You lose a chance");
             }
-            
-            //Console.WriteLine(guess[index]);
+
             //index increment
             index++;
-        }
-  
-        
+            //condition to print "Try again"
+            if (index <= 9)
+            {
+                Console.WriteLine("\nTry again a number between 10 to 40:");
+            }
+            //- Store every guess in an array or list.
+            Console.WriteLine("Your guess:");
 
-//- Provide feedback:
-//- Too warm
-//- Too cold
-//- Perfect
-//- Store every guess in an array or list.
-//- After the game ends, display all guesses.
+        }
+
+
+
+
+
+
+
+
+
+
+        //- After the game ends, display all guesses.
 
 
 
