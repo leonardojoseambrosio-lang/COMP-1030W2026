@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Name: Leonardo Jose Ambrosio
+ID: 200657215
+Date: Mar/14/2026
+Assignment 2 - COMP 1030 Programming Fundamentals
+*/
+
+using System;
 using System.Diagnostics.Metrics;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -39,6 +46,15 @@ class Program
             {
 
                 guess[index] = Int32.Parse(typeYourAnsewer);
+
+                //message to numbers less than 10 and greater than 40.
+                if (guess[index] < 10 || guess[index] > 40) 
+                {
+                    Console.WriteLine("\nThis number is not between 10 and 40.");
+
+                }
+
+
 
                 //- Perfect
                 if (guess[index] == rnd)
