@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 // STEP 4: Define the namespace (Lab9)
 namespace Lab9
@@ -21,12 +22,13 @@ public class Ball
 
         }
     // STEP 8a: Create a method called 'Description' - it does not need any parameters and it will not return anything
-    public string Description()
+    public void Description()
     {
             // STEP 8b: Build a sentence that describes the Ball object, including all three properties
-            string sentence = $"This ball is {Color}, {Size}cm in diameter, and {Material}";
+           Console.WriteLine($"This ball is {Color}, {Size}cm in diameter, and {Material}.");
             // STEP 8c: Output the above sentence to the console, then head back to Program.cs for the next step
-    }
+
+        }
 }
 
 }

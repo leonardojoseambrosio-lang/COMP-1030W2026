@@ -9,19 +9,31 @@ Then you will create a method for the class that will output a simple descriptio
 */
 // STEP 1: Add a dependency with the 'using' directive - we will call the namespace 'Lab9'
 using Lab9;
+using System.Drawing;
 namespace Program
 {
+    public class Program
+    {
 
-    // STEP 2: We will add a new class in a separate file - go to Project > Add Class... in Visual Studio and create a new class called Lab9.cs
+        static void Main(string[] args)
+        {
+            // STEP 2: We will add a new class in a separate file - go to Project > Add Class... in Visual Studio and create a new class called Lab9.cs
 
-    // STEP 3: Copy the code for Lab9.cs (just below) and paste it into the new file - proceed to that file for STEP 4
+            // STEP 3: Copy the code for Lab9.cs (just below) and paste it into the new file - proceed to that file for STEP 4
 
-    // STEP 9: Create an instance of class Ball and call it 'ball1' - it will be red, 10 cm in diameter, and rubber
-     var ball1 = new Ball("red", 10, "ruber");
-    // STEP 10: Call the Description method using the ball1 object instance
-    ball1.Description();
+            // STEP 9: Create an instance of class Ball and call it 'ball1' - it will be red, 10 cm in diameter, and rubber
+            Ball ball1 = new Ball("red", 10, "rubber");
+            // STEP 10: Call the Description method using the ball1 object instance
+            ball1.Description();
 
-    // STEP 11: Create another instance of a Ball object, calling it 'ball2' - you will choose the 3 arguments
-    // STEP 12: Call the Description method using the ball2 object instance
-    // STEP 13: Paste the code for both Program.cs and Lab9.cs into the submission text area below. Please use the "Code snippet" (</>) button so that your code formatting is retained.
+            // STEP 11: Create another instance of a Ball object, calling it 'ball2' - you will choose the 3 arguments
+            var ball2 = new Ball("blue", 22, "plastic");
+            // STEP 12: Call the Description method using the ball2 object instance
+            ball2.Description();
+            Console.WriteLine($"{nameof(ball2)} - {ball2.Color} - {ball2.Size} - {ball2.Material}");
+            // STEP 13: Paste the code for both Program.cs and Lab9.cs into the submission text area below. Please use the "Code snippet" (</>) button so that your code formatting is retained.
+
+
+        }
+    }
 }
