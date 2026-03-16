@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Name: Leonardo Jose Ambrosio
+ID: 200657215
+Date: Mar / 16 / 2026
+Lab 9 - COMP 1030 Programming Fundamentals
+*/
+
+using System;
 
 // STEP 4: Define the namespace (Lab9)
 namespace Lab9

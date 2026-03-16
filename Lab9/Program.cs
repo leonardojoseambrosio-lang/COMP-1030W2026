@@ -1,4 +1,11 @@
 ﻿/*
+Name: Leonardo Jose Ambrosio
+ID: 200657215
+Date: Mar / 16 / 2026
+Lab 9 - COMP 1030 Programming Fundamentals
+*/
+
+/*
 Lab 9
 This lab will give you more practice building a class, then creating an instance of that class (an object)
 Your job is to create a Class for a ball object. The class will feature the following properties:
