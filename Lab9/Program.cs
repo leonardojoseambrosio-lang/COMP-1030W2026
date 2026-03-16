@@ -9,7 +9,7 @@ Then you will create a method for the class that will output a simple descriptio
 */
 // STEP 1: Add a dependency with the 'using' directive - we will call the namespace 'Lab9'
 using Lab9;
-using System.Drawing;
+
 namespace Program
 {
     public class Program
@@ -30,7 +30,7 @@ namespace Program
             var ball2 = new Ball("blue", 22, "plastic");
             // STEP 12: Call the Description method using the ball2 object instance
             ball2.Description();
-            Console.WriteLine($"{nameof(ball2)} - {ball2.Color} - {ball2.Size} - {ball2.Material}");
+
             // STEP 13: Paste the code for both Program.cs and Lab9.cs into the submission text area below. Please use the "Code snippet" (</>) button so that your code formatting is retained.
 
 
