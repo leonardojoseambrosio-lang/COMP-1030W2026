@@ -21,9 +21,11 @@ public class Ball
 
         }
     // STEP 8a: Create a method called 'Description' - it does not need any parameters and it will not return anything
+    public string Description()
     {
-        // STEP 8b: Build a sentence that describes the Ball object, including all three properties
-        // STEP 8c: Output the above sentence to the console, then head back to Program.cs for the next step
+            // STEP 8b: Build a sentence that describes the Ball object, including all three properties
+            string sentence = $"This ball is {Color}, {Size}cm in diameter, and {Material}";
+            // STEP 8c: Output the above sentence to the console, then head back to Program.cs for the next step
     }
 }
 
