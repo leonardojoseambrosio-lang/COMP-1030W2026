@@ -20,7 +20,7 @@ namespace Shapes
             // STEP 2: Proceed to Shapes.cs and examine the class Rectangle
 
             // STEP 3: Create an instance of a new Rectangle object (call it var rectangle1) and give it a height and width in integers (passed in as arguments)
-            var rectangle1 = new Rectangle(10, 10);
+            var rectangle1 = new Rectangle(10, 20);
             // STEP 4a: Get a description of the rectangle1 object by invoking (or calling) the DescribeRectangle() method and assigning it to a string type called description1
             var description1 = rectangle1.DescribeRectangle();
 
@@ -31,15 +31,15 @@ namespace Shapes
             // STEP 5: Compile and run the application to see the result or to track down any errors
 
             // STEP 6: Create another instance of a Rectangle object (var rectangle2) and give it a different height and width in integers (as arguments)
-            var rectangle2 = new Rectangle(4, 8);
+            var rectangle2 = new Rectangle(4, 16);
 
-            // STEP 7a: Get a description of the rectangle object by invoking (calling) the DescribeRectangle() method and assigning it to a string type called description1
+            // STEP 7a: Get a description of the rectangle object by invoking (calling) the DescribeRectangle() method and assigning it to a string type called description2
             var description2 = rectangle2.DescribeRectangle();
 
-            // STEP 7b: Output description1 using Console.WriteLine()
+            // STEP 7b: Output description2 using Console.WriteLine()
             Console.WriteLine(description2);
-            // STEP 7c: Draw the rectangle1 object to the console by invoking the DrawRectangle() method
-
+            // STEP 7c: Draw the rectangle2 object to the console by invoking the DrawRectangle() method
+            rectangle2.DrawRectangle();
             // STEP 8: Compile and run the application once again to see the result
         }
     }
