@@ -37,7 +37,7 @@ namespace Shapes
             var description2 = rectangle2.DescribeRectangle();
 
             // STEP 7b: Output description1 using Console.WriteLine()
-
+            Console.WriteLine(description2);
             // STEP 7c: Draw the rectangle1 object to the console by invoking the DrawRectangle() method
 
             // STEP 8: Compile and run the application once again to see the result
