@@ -1,0 +1,15 @@
+C:\COMP1030W\lab-9-comp1030\bin\Debug\net10.0\lab-9-comp1030.exe
+C:\COMP1030W\lab-9-comp1030\bin\Debug\net10.0\lab-9-comp1030.deps.json
+C:\COMP1030W\lab-9-comp1030\bin\Debug\net10.0\lab-9-comp1030.runtimeconfig.json
+C:\COMP1030W\lab-9-comp1030\bin\Debug\net10.0\lab-9-comp1030.dll
+C:\COMP1030W\lab-9-comp1030\bin\Debug\net10.0\lab-9-comp1030.pdb
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\lab-9-comp1030.GeneratedMSBuildEditorConfig.editorconfig
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\lab-9-comp1030.AssemblyInfoInputs.cache
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\lab-9-comp1030.AssemblyInfo.cs
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\lab-9-comp1030.csproj.CoreCompileInputs.cache
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\lab-9-comp1030.sourcelink.json
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\lab-9-comp1030.dll
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\refint\lab-9-comp1030.dll
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\lab-9-comp1030.pdb
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\lab-9-comp1030.genruntimeconfig.cache
+C:\COMP1030W\lab-9-comp1030\obj\Debug\net10.0\ref\lab-9-comp1030.dll
