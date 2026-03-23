@@ -1,4 +1,11 @@
-﻿namespace Shapes;
+﻿/*
+Name: Leonardo Jose Ambrosio
+ID: 200657215
+Date: Mar / 23 / 2026
+Lab 10 - COMP 1030 Programming Fundamentals
+*/
+
+namespace Shapes;
 
 public class Rectangle
 {
